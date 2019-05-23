@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+}
+#social{
+    width: 100%;
+    height: 80px;
+    background-color: #c5c5c500;
+    padding: 4% 4% 2% 4%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+.sec{
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.596);
+    padding: 0 12px 0 0;
+}
+.sec_1{
+    width: 28px;
+    height: 28px;
+    background-image: url("../images/facebook.svg");
+    margin-right:12px;
+}
+.sec_2{
+    width: 28px;
+    height: 28px;
+    background-image: url("../images/youtube.svg");
+}
+
+/* 分隔 */
+#footer{
+    width: 100%;
+    background-color: #c5c5c586;
+    padding: 0 4% 0 4%;
+    display: flex;
+    justify-content: space-between;
+}
+#footer h4{
+    color: #616161;
+    font-size: 15px;
+    padding: 36px 0 4px 0;
+    margin: 0px;
+}
+#footer ul{
+    padding: 0px;
+}
+#footer li{  
+    padding: 8px 0 8px 0;
+    list-style: none;
+}
+#footer a{
+    color: #616161;
+    font-size: 11px;
+    text-decoration: none;
+}
+.fooder_1,
+.fooder_2,
+.fooder_3,
+.fooder_4,
+.fooder_5,
+.fooder_6{
+    width: calc(100% / 6);
+}
+
+/* 分隔 */
+#social_2{
+    width: 100%;
+    background-color: #c5c5c586;
+    padding: 30px 4% 16px 4%; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#social_2 ul{
+    margin: 0px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+#social_2 li{
+    padding: 0 24px 4px 0;
+}
+#social_2 a{
+    color: #616161;
+    font-size: 11px;
+    text-decoration: none;
+}
+
+@media screen and (max-width:1070px){
+    #footer{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .fooder_1,
+    .fooder_2,
+    .fooder_3,
+    .fooder_4,
+    .fooder_5,
+    .fooder_6{
+        width: calc(100% / 3);
+    }
+
+}
+@media screen and (max-width:770px){
+    #social_2{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #social_2 ul{
+        padding: 0px;
+    }
+    #social_2 li{
+        padding: 6px 4px 0 6px;
+    }
+}
+@media screen and (max-width:540px){
+    #footer{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .fooder_1,
+    .fooder_2,
+    .fooder_3,
+    .fooder_4,
+    .fooder_5,
+    .fooder_6{
+        width: 100%;
+    }
+}

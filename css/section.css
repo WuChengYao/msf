@@ -1,0 +1,140 @@
+*{
+    box-sizing: border-box;
+}
+/* .section_1{
+    width: 100%;
+    height: 80vh;
+    background-image: url("../images/RW5kpU.jfif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.section_2{
+    width: 100%;
+    height: 60vh;
+    background-color: #333;
+    position: relative;
+    display: none;
+} */
+.section_1,
+.section_2{
+    position: relative;
+}
+.section_1 img,
+.section_2 img{
+    width: 100%;
+    height: 35vw;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.section_1_1{
+position: absolute;
+left: 5%;
+top: 28%;
+}
+.section_2_1{
+position: absolute;
+left: 6%;
+top: 8%;
+}
+.section_1_1_1{
+color: white;
+}
+.section_2_1_1{
+color: black;
+}
+.section_1_1_1 h1,
+.section_2_1_1 h1{
+    font-size: 24px;
+}
+.section_1_1_1 h3,
+.section_2_1_1 h3{
+    font-size: 15px;
+}
+.section_1_1_2{
+    width: 125px;
+    height: 40px;
+    background-color: white;
+    text-align: center;
+    padding: 3% 8% 1% 8%;
+}
+.section_2_1_2{
+    width: 125px;
+    height: 40px;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 5% 10% 1% 10%;
+}
+.section_1_1_2 a{
+    color: black;
+    font-size: 15px;
+}
+.section_2_1_2 a{
+    color: white;
+    font-size: 15px;
+}
+
+#text h3{
+    font-size: 25px;
+    margin: 0px;
+    padding: 48px 5% 0 5%;
+}
+@media screen and (min-width:1070px){
+    #section{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media screen and (max-width:765px){
+    .section_1,
+    .section_2{
+        position: static;
+        display: flex;
+        flex-wrap: wrap; 
+    }
+    .section_1_1{
+        width: 100%;
+        height: 40vh;
+        left: 0%;
+        background-color: #333;
+        position: relative;
+    }
+    .section_2_1{
+        width: 100%;
+        height: 40vh;
+        left: 0%;
+        background-color: #666;
+        position: relative;
+    }
+    .section_1_1_2{
+        left: 40%;
+        padding: 1% 0 0 0;
+        position: absolute;
+    }
+    .section_2_1_2{
+        left: 40%;
+        padding: 1% 0 0 0;
+        position: absolute;
+    }
+}

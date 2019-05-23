@@ -1,0 +1,223 @@
+*{
+    box-sizing: border-box;
+}
+@keyframes burger_1a{
+    0%{
+        top: 0;
+    }
+    30%{
+        top: 50%;
+        transform: rotate(0);
+    }
+    100%{
+        top: 50%;
+        transform: rotate(45deg);
+    }
+}
+
+@keyframes burger_2a{
+    0%{
+        top: 50%;
+    }
+    50%{
+        top: 50%;
+        opacity: 0;
+    }
+    100%{
+        top: 50%;
+        opacity: 0;
+    }
+}
+@keyframes burger_3a{
+    0%{
+        top: 100%;
+    }
+    30%{
+        top: 50%;
+        transform: rotate(0);
+    }
+    100%{
+        top: 50%;
+        transform: rotate(-45deg);
+    }
+}
+body{
+    margin: 0;
+    font-family: 'Segoe UI','Microsoft JhengHei',微軟正黑體,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+#navbar{
+    width: 90%;
+    background-color: rgba(240, 248, 255, 0.096);
+    margin-left: auto;
+    margin-right: auto;
+    left: 5%;
+    display: flex;
+}
+#navbar a{
+    text-decoration: none;
+    font-size: 13px;
+    color: #262626;
+    font-family: 'Segoe UI','Microsoft JhengHei',微軟正黑體,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.logo{
+    width: 137px;
+    height: 8vh;
+    background-image: url("../images/RE1Mu3b.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.shellmenu{
+    width: calc(70% - 137px);
+    height: 8vh;
+    display: flex;
+    justify-content: flex-start;
+    padding: 2vh 0 0 20px;;
+}
+.shellmenu a{
+    padding: 16px 8px 10px 8px;
+}
+.wfmen{
+    width: 30%;
+    height: 8vh;
+    padding-top: 2vh;
+    display: flex;
+    justify-content: flex-end;
+    justify-content: space-between;
+}
+.wfmen_1,
+.wfmen_2,
+.wfmen_3,
+.wfmen_4{
+    height: 8vh;
+}
+/* .wfmen_4{
+    width: 50px;
+    background-image: url("../images/sign_in.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+} */
+
+.wfmen_1_in{
+    width: 80%;
+    height: 50%;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 8vh;
+    left: 10%;
+    right: 10%;
+    display: flex;
+    z-index: 888;
+}
+.wfmen_1_none{
+    display: none;
+}
+.wfmen_1_block{
+    display: block;
+}
+.wfmen_1_in ul{
+    list-style: none;
+    margin: 0;
+    padding: 1% 6% 0 6%;
+}
+
+
+
+
+/* ↓↓↓↓--RWD--↓↓↓↓ */
+
+#navbar_2{
+    width: 100%;
+    display: none;
+    position: relative;
+}
+
+/* ↓↓↓漢堡條↓↓↓ */
+.burger{
+    width: 48px;
+    height: 8vh;
+    position: relative;
+}
+.burgerbr{
+    width: 40%;
+    height: 1px;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    left: 25%; 
+}
+.burger_1{
+    top: 40%;
+}
+.burger_2{
+    top: 50%;
+}
+.burger_3{
+    top: 60%;
+}
+.burger_1a{
+    animation-name: burger_1a;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.burger_2a{
+    animation-name: burger_2a;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.burger_3a{
+    animation-name: burger_3a;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+/* ↑↑↑漢堡條↑↑↑ */
+
+.navbar_2_1{
+    width: calc(100% - 50px);
+    height: 8vh;
+    position: absolute;
+    left: 48px;
+    top: 0px;
+    display: flex;
+    justify-content: space-between;
+    line-height: 8vh;
+}
+.navbar_2_1 a{
+    color: #262626c2;
+}
+.logo{
+    margin: 0px;
+}
+.burger_onin{
+    position: absolute;
+    top: 8vh;
+    z-index: 9999;
+}
+.burger_onin_2{
+    display: none;
+}
+.burger_onin_1{
+    width: 100vw;
+    background-color: rgb(240, 240, 239);
+    padding: 14px 24px 15px 15px;
+    border: 1px dotted rgba(0, 0, 0, 0.418);
+    display: block;
+}
+.burger_onin_1 a{
+    text-decoration: none;
+    font-size: 13px;
+    color: #262626;
+}
+@media screen and (max-width:1400px){
+    .a_none{
+        display: none;
+    }
+}
+@media screen and (max-width:860px){
+    #navbar{
+        display: none;
+    }
+    #navbar_2{
+        display: block;
+    }
+}
