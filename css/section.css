@@ -1,33 +1,23 @@
 *{
     box-sizing: border-box;
 }
-/* .section_1{
-    width: 100%;
-    height: 80vh;
-    background-image: url("../images/RW5kpU.jfif");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-}
-.section_2{
-    width: 100%;
-    height: 60vh;
-    background-color: #333;
-    position: relative;
-    display: none;
-} */
 .section_1,
 .section_2{
     position: relative;
 }
-.section_1 img,
-.section_2 img{
+.section_img1,
+.section_img2{
     width: 100%;
     height: 35vw;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+.section_img1{
+    background-image: url("../images/RW5kpU.jpg");
+}
+.section_img2{
+    background-image: url("../images/RE2OdIC-2.jpg");
 }
 .swiper-slide {
     text-align: center;
